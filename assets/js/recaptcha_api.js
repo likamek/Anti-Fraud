@@ -1,12 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
+require('dotenv').config(); // Add this line to load environment variables
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/your-server-endpoint", async (req, res) => {
-    const secretKey = "6LdEh6gqAAAAABmfffV3_Y0GHRqj352HGsFzeR6-";
+    const secretKey = process.env.RECAPTCHA_SECRET_KEY; // Use environment variable
     const token = req.body["g-recaptcha-response"];
 
     try {

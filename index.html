@@ -9,10 +9,11 @@
   <link rel="icon" type="image/png" href="assets/images/fingerprint.png">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="assets/vendors/glightbox/css/glightbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.min.css"> <!-- Link to CDN -->
+  <script src="assets/js/intlTelInput.min.js"></script>
+  <script src="assets/js/recaptcha_api.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:;">
 
 </head>
 
@@ -342,7 +343,6 @@
 
   <!-- SCRIPTS -->
   <script src="assets/js/sticky.js"></script>
-  <script src="assets/vendors/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendors/glightbox/js/glightbox.js"></script>
   <script src="assets/js/form.js"></script>
   <script src="assets/js/back-to-top.js"></script>
@@ -363,3 +363,4 @@
 </body>
 
 </html>
+

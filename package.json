@@ -25,9 +25,18 @@
     "body-parser": "^1.20.3",
     "bootstrap": "^5.0.0",
     "bootstrap-icons": "^1.11.3",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "intl-tel-input": "^25.2.0",
     "jquery": "^3.7.1",
     "stickyfilljs": "^2.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/likamek/Anti-Fraud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/likamek/Anti-Fraud/issues"
+  },
+  "homepage": "https://github.com/likamek/Anti-Fraud#readme"
 }
