@@ -2165,7 +2165,7 @@
 
 
     _addEventListeners() {
-      EventHandler.on(this._element, EVENT_CLICK, event => {
+      EventHandler.on(this._element, EVENT_CLICK, (event) => {
         event.preventDefault();
         this.toggle();
       });
@@ -5014,3 +5014,33 @@
 
 })));
 //# sourceMappingURL=bootstrap.js.map
+
+document.querySelectorAll('.accordion a').forEach(section => {
+  section.addEventListener('click', (event) => {
+    event.preventDefault();
+    const href = section.parentElement.getAttribute('href');
+    if (href) {
+      window.location.href = href;
+    }
+  });
+});
+
+document.querySelectorAll('.accordion-section').forEach(section => {
+  section.addEventListener('click', (event) => {
+    event.preventDefault();
+    const href = section.querySelector('a').getAttribute('href');
+    if (href) {
+      window.location.href = href;
+    }
+  });
+});
+
+document.querySelectorAll('.accordion-section').forEach(section => {
+  section.addEventListener('click', (event) => {
+    event.preventDefault();
+    const href = section.parentElement.getAttribute('href');
+    if (href) {
+      window.location.href = href;
+    }
+  });
+});

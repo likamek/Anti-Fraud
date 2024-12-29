@@ -14,6 +14,16 @@ const iti = intlTelInput(phoneInputField, {
   utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
 });
 
+document.getElementById("nextBtn").addEventListener("click", function(event) {
+  event.preventDefault();
+  nextPrev(1);
+});
+
+document.getElementById("prevBtn").addEventListener("click", function(event) {
+  event.preventDefault();
+  nextPrev(-1);
+});
+
 function showTab(n) {
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");

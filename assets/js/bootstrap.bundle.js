@@ -6747,3 +6747,9 @@
 })));
 
 //# sourceMappingURL=bootstrap.bundle.js.map
+
+document.querySelectorAll('.accordion-section').forEach(section => {
+  section.addEventListener('click', () => {
+    window.location.href = section.parentElement.getAttribute('href');
+  });
+});
