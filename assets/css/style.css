@@ -398,7 +398,7 @@ sup {
 
 a {
   color: #4c585b;
-  text-decoration: underline;
+  text-decoration: none !important;
 }
 a:hover {
   color: #7e99a3;
@@ -4568,6 +4568,7 @@ textarea.form-control-lg {
 }
 
 .accordion-button {
+  text-decoration: none;
   position: relative;
   display: flex;
   align-items: center;
@@ -4582,6 +4583,14 @@ textarea.form-control-lg {
   overflow-anchor: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
+
+.accordion-button a {
+  text-decoration: none;
+}
+a.accordion-button  {
+  text-decoration: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
     transition: none;
@@ -4609,9 +4618,6 @@ a.accordion-button.collapsed::after {
   transition: transform 0.2s ease-in-out;
 }
 
-.accordion-button {
-  text-decoration: none;
-}
 .accordion-body:hover {
   color: #4c585b;
 }
