@@ -24,6 +24,16 @@ document.getElementById("prevBtn").addEventListener("click", function(event) {
   nextPrev(-1);
 });
 
+document.getElementById("nextLink").addEventListener("click", function(event) {
+  event.preventDefault();
+  nextPrev(1);
+});
+
+document.getElementById("prevLink").addEventListener("click", function(event) {
+  event.preventDefault();
+  nextPrev(-1);
+});
+
 function showTab(n) {
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
